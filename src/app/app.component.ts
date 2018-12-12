@@ -7,18 +7,15 @@ import { RegistrationPage } from '../pages/registration/registration';
 import { HomePage } from '../pages/home/home';
 import { ContactUsPage } from '../pages/contact-us/contact-us';
 import { AboutUSPage } from '../pages/about-us/about-us';
-
-
 import { CameraTabDefaultPagePage } from '../pages/camera-tab-default-page/camera-tab-default-page';
-
-
+import { ServicesPage } from '../pages/services/services';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
-    rootPage:any = CameraTabDefaultPagePage;
+    rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -40,5 +37,8 @@ export class MyApp {
   }goToAboutUS(params){
     if (!params) params = {};
     this.navCtrl.setRoot(AboutUSPage);
+  }goToServices(params){
+    if (!params) params = {};
+    this.navCtrl.setRoot(ServicesPage);
   }
 }
