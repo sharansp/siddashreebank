@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ServicesPage } from '../services/services';
+
 
 @Component({
   selector: 'page-registration',
@@ -8,6 +10,11 @@ import { NavController } from 'ionic-angular';
 export class RegistrationPage {
 
   constructor(public navCtrl: NavController) {
+  }
+
+  nav(){
+    alert();
+    this.navCtrl.push(ServicesPage);
   }
   
 }
