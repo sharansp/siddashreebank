@@ -16,8 +16,6 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { IonicImageViewerModule } from 'ionic-img-viewer';
-
 
 @NgModule({
   declarations: [
@@ -35,8 +33,7 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    IonicImageViewerModule
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [

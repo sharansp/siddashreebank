@@ -7,7 +7,7 @@ import { RegistrationPage } from '../pages/registration/registration';
 import { HomePage } from '../pages/home/home';
 import { ContactUsPage } from '../pages/contact-us/contact-us';
 import { AboutUSPage } from '../pages/about-us/about-us';
-// import { CameraTabDefaultPagePage } from '../pages/camera-tab-default-page/camera-tab-default-page';
+import { CameraTabDefaultPagePage } from '../pages/camera-tab-default-page/camera-tab-default-page';
 import { ServicesPage } from '../pages/services/services';
 
 @Component({
