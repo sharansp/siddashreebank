@@ -9,6 +9,6 @@ export class ServicesPage {
 
   constructor(public navCtrl: NavController) {
   }
-  navBack(){alert()}
+  // navBack(){alert()}
   
 }
