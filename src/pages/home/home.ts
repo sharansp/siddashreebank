@@ -9,5 +9,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
   }
-  
+  navBack(){
+    alert('nav from home')
+  }
 }

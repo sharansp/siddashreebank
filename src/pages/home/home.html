@@ -1,11 +1,23 @@
 <ion-header>
+
+    <!-- <ion-toolbar>
+
+        <ion-buttons left>
+            <button on-click="navBack($event)" ion-button>
+              <ion-icon name='close' ></ion-icon>
+            </button>
+          </ion-buttons>
+
+    </ion-toolbar> -->
+
   <ion-navbar>
-    <button ion-button menuToggle>
+
+    <button ion-button menuToggle on-click="navBack($event)" >
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>
-      Home
-    </ion-title>
+    <ion-title> Home </ion-title>
+
+
     <ion-buttons end>
       <button ion-button icon-only>
         <ion-icon name="exit"></ion-icon>
@@ -13,4 +25,13 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page6" style="background-color:#F4EDDE;"></ion-content>
+
+
+
+
+
+
+
+<ion-content padding id="page6" style="background-color:#F4EDDE;">
+  <img src="https://lh3.googleusercontent.com/-p-MdtvXh9DY/XB7zl-vvWtI/AAAAAAAACf8/FojYSE1m3CofvQbCl_AaEgk3uylrZy_8gCL0BGAYYCw/h1280/2018-12-22.jpg" imageViewer>
+</ion-content>
