@@ -33,13 +33,20 @@
 
 
 <ion-content padding id="page6" style="background-color:#F4EDDE;">
-  <div>
+    <div class="spacer" style="height:10px;" ></div>
+    <ion-slides effect="fade" centeredSlides zoom="true" speed="1000" autoplay="8000" pager loop paginationType="bullets">
+       <ion-slide *ngFor="let slide of slides" class="swipe-slider-new">
+          <img [src]="slide" imageViewer style="display:block;width:100%;height:100%;" >
+       </ion-slide>
+    </ion-slides>
+
+  <!-- <div>
   <img style='height: 30%;
-  width: 100%;' src="https://plus.google.com/u/0/photos/albums/pq0g4k7igqo009njah5itvfi3fvs025av?pid=6638017747651865682&oid=113235744587322742807" imageViewer>
+  width: 100%;' src="https://lh3.googleusercontent.com/-p-MdtvXh9DY/XB7zl-vvWtI/AAAAAAAACf8/FojYSE1m3CofvQbCl_AaEgk3uylrZy_8gCL0BGAYYCw/h1280/2018-12-22.jpg" imageViewer>
   <img style='
-  width: 50%;' src="https://plus.google.com/u/0/photos/albums/pq0g4k7igqo009njah5itvfi3fvs025av?pid=6638018547952208642&oid=113235744587322742807" imageViewer>
+  width: 50%;' src="https://lh3.googleusercontent.com/-roAKjslFjHY/XB76q5t2kqI/AAAAAAAACgo/2WCJyJLN7eETnRjU27kRB9iE4M9oXatAgCL0BGAYYCw/h639/2018-12-22.jpg" imageViewer>
   <img style='
-  width: 50%; float:left'  src="https://plus.google.com/u/0/photos/albums/pq0g4k7igqo009njah5itvfi3fvs025av?pid=6638017766499265794&oid=113235744587322742807" imageViewer>
-</div>
+  width: 50%; float:left'  src="https://lh3.googleusercontent.com/-nzItiPY3JMM/XB76sxslSwI/AAAAAAAACgo/GTL0trBgeVYxptouaocQoeBdLInvxhu3gCL0BGAYYCw/h640/2018-12-22.jpg" imageViewer>
+</div> -->
 </ion-content>
 
